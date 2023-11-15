@@ -1,3 +1,3 @@
 # Personal-Portfolio
 
-# Website detailing project works and professional information
+Website detailing project works and professional information
