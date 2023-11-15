@@ -1,0 +1,78 @@
+/* applies to all pages */
+body {
+    font-family: DM Sans;
+}
+
+.navigation {
+    display: flex;
+    margin-left: 0px;
+    padding-left: 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* homepage */
+.header {
+    display: flex;
+    margin: 50px;
+    background-image: url("assets/header.gif");
+}
+
+.intro-text {
+    width: 442px;
+    height: 272px;
+    flex-shrink: 0;
+}
+
+h1 {
+    color: var(--Main-Black, #181717);
+
+    font-family: DM Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 97.2%; /* 58.32px */
+    letter-spacing: -1.8px;
+}
+
+h2 {
+    color: #606060;
+
+    font-family: DM Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 117%; /* 37.44px */
+    letter-spacing: -0.96px;
+}
+
+
+/* resume page */
+.resume-img {
+    width: 250px;
+    display: inline-flex;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+  }
+  
+  .button:hover {background-color: #626D3F}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
