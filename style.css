@@ -16,11 +16,22 @@ body {
     gap: 50px;
 }
 
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 
 /* homepage */
 .header {
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url("assets/header.gif");
+    background-repeat: no-repeat;
+    width: 100%;
+    /* height: auto; */
 }
 
 .intro-text {
@@ -31,7 +42,6 @@ body {
 
 h1 {
     color: var(--Main-Black, #181717);
-
     font-family: DM Sans;
     font-size: 60px;
     font-style: normal;
@@ -53,9 +63,12 @@ h2 {
 
 
 /* resume page */
-.resume-img {
-    width: 250px;
-    display: inline-flex;
+.resume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
 }
 
 .button {
@@ -70,13 +83,47 @@ h2 {
     background-color: #04AA6D;
     border: none;
     border-radius: 15px;
-    box-shadow: 0 5px #999;
   }
   
-  .button:hover {background-color: #626D3F}
+  .button:hover {background-color: #238126}
   
   .button:active {
     background-color: #3e8e41;
-    box-shadow: 0 5px #666;
     transform: translateY(4px);
+  }
+
+  /* about page */
+  .about-me-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    /* width: 80%; */
+  }
+
+  .about-me-top-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .about-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 229px;
+  }
+
+  h2 {
+    text-align: left;
+  }
+
+  .about-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 480px;
+    height: 639px;
+    flex-shrink: 0;
   }
