@@ -31,6 +31,7 @@ body {
     background-image: url("assets/header.gif");
     background-repeat: no-repeat;
     width: 100%;
+    background-size:cover;
     /* height: auto; */
 }
 
@@ -126,4 +127,8 @@ h2 {
     width: 480px;
     height: 639px;
     flex-shrink: 0;
+  }
+
+  .grey-background {
+    background-color: #606060;
   }
