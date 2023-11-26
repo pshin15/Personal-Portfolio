@@ -103,6 +103,7 @@ h2 {
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    margin-bottom: 25px
 }
 
 .button {
@@ -131,23 +132,24 @@ h2 {
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    margin: 20px;
+    flex-direction: column;
     /* width: 80%; */
   }
 
-  .about-me-top-section {
+  .about-me-section {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
   }
 
-  .about-text {
+  /* .about-text {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 600px;
-    height: 229px;
-  }
+  } */
 
   h2 {
     text-align: left;
@@ -158,6 +160,6 @@ h2 {
     align-items: center;
     justify-content: center;
     width: 480px;
-    height: 639px;
+    /* height: 639px; */
     flex-shrink: 0;
   }
