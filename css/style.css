@@ -1,6 +1,7 @@
-applies to all pages
+/* applies to all pages */
 body {
     font-family: DM Sans;
+    background-color: #F6F5EF;
 }
 
 .navigation-container {
@@ -31,14 +32,18 @@ body {
     background-image: url("/assets/header.gif");
     background-repeat: no-repeat;
     width: 100%;
-    background-size:cover;
-    /* height: auto; */
+    height: 700px;
+    background-size: cover;
 }
 
 .intro-text {
     width: 442px;
     height: 272px;
     flex-shrink: 0;
+}
+
+#memoji {
+  width: 150px;
 }
 
 h1 {
@@ -62,6 +67,34 @@ h2 {
     letter-spacing: -0.96px;
 }
 
+.project-card1 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-image: url("/assets/bookmark-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  /* width: 100%;  */
+}
+
+.project-card2 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-image: url("/assets/search-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  /* width: 100%;  */
+}
+
+
+.project-cover-content {
+  align-content: center;
+  width: 35%; 
+  margin: 100px;
+}
 
 /* resume page */
 .resume {
