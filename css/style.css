@@ -101,8 +101,12 @@ h2 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    /* width: 100%; */
     margin-bottom: 25px
+}
+
+.resume-img {
+  width: 50%;
 }
 
 .button {
