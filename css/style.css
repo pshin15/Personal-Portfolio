@@ -162,3 +162,37 @@ h2 {
     /* height: 639px; */
     flex-shrink: 0;
   }
+
+  /* @keyframes name */
+  /* transform:  */
+  /* animation: name duration transition infinite */
+  
+  @media screen and (max-width: 600px) {
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 30px;
+      height: 667px;
+    }
+    h3 {
+      color: #606060;
+  
+      font-family: DM Sans;
+      font-size: 75px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 117%; /* 37.44px */
+    }
+    p {
+      color: #560099;
+  
+      font-family: DM Sans;
+      font-size: 75px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 117%;
+    }
+
+    /* <name= "viewport" content="width=device-width, initial-scale=1.0"> */
+  }
