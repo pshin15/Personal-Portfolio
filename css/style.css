@@ -29,7 +29,19 @@ body {
 
 
 /* homepage */
-.main-header {
+.main-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-image: url("/assets/header.gif");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+}
+
+.header-text {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,17 +53,17 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url("/assets/header.gif");
-    background-repeat: no-repeat;
     width: 100%;
-    height: 700px;
-    background-size: cover;
 }
 
 .intro-text {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
     width: 442px;
     height: 272px;
     flex-shrink: 0;
+
 }
 
 #memoji {
