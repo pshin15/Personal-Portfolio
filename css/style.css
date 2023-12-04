@@ -23,6 +23,10 @@ body {
     justify-content: space-around;
 }
 
+.footer-text {
+  text-decoration: none;
+}
+
 
 /* homepage */
 .header {
@@ -55,6 +59,32 @@ h1 {
     line-height: 97.2%; /* 58.32px */
     letter-spacing: -1.8px;
 }
+
+.typewriter h1 {
+  /* color: #fff; */
+  font-family: DM Sans;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  /* margin: 0 auto; Gives that scrolling effect as the typing happens */
+  letter-spacing: .1em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  20% { border-color: black }
+}
+
 
 h2 {
     color: #606060;
@@ -94,6 +124,17 @@ h2 {
   width: 35%; 
   margin: 100px;
 }
+
+.scroller {
+  height: 755px;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.scroller section {
+  scroll-snap-align: start;
+}
+
 
 /* resume page */
 .resume {
@@ -172,15 +213,13 @@ h2 {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin: 30px;
       height: 667px;
     }
     h3 {
-      color: #606060;
+      color: #000000;
   
       font-family: DM Sans;
-      font-size: 75px;
-      font-style: normal;
+      font-size: 50px;
       font-weight: 400;
       line-height: 117%; /* 37.44px */
     }
@@ -193,6 +232,4 @@ h2 {
       font-weight: 400;
       line-height: 117%;
     }
-
-    /* <name= "viewport" content="width=device-width, initial-scale=1.0"> */
   }
