@@ -66,7 +66,7 @@ h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid black; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  /* margin: 0 auto; Gives that scrolling effect as the typing happens */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .1em; /* Adjust as needed */
   animation: 
     typing 3.5s steps(30, end),
@@ -95,6 +95,7 @@ h2 {
     font-weight: 400;
     line-height: 117%; /* 37.44px */
     letter-spacing: -0.96px;
+    text-align: left;
 }
 
 .project-card1 {
@@ -125,6 +126,7 @@ h2 {
   margin: 100px;
 }
 
+/* 
 .scroller {
   height: 755px;
   overflow-y: scroll;
@@ -134,7 +136,7 @@ h2 {
 .scroller section {
   scroll-snap-align: center;
 }
-
+ */
 
 /* resume page */
 .resume {
@@ -191,10 +193,6 @@ h2 {
     margin-bottom: 50px;
   }
 
-  h2 {
-    text-align: left;
-  }
-
   .about-img {
     display: flex;
     align-items: center;
@@ -211,10 +209,25 @@ h2 {
   @media screen and (max-width: 600px) {
     .header {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      height: 667px;
+      height: 730px;
     }
+
+    .typewriter h1 {
+      font-size: 35px;
+      font-family: DM Sans;
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      border-right: .15em solid black; /* The typwriter cursor */
+      white-space: nowrap; /* Keeps the content on a single line */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      letter-spacing: .1em; /* Adjust as needed */
+      animation: 
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+    }    
+
     h3 {
       color: #000000;
   
