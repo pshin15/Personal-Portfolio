@@ -163,9 +163,9 @@ h2 {
 
 
 .scroller {
-  height: 755px;
+  height: 700px;
   overflow-y: scroll;
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y mandatory;
 
   scroll-padding-top: 15vh;
   overflow-y: scroll;
@@ -173,6 +173,9 @@ h2 {
 
 .scroller section {
   scroll-snap-align: start;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 
