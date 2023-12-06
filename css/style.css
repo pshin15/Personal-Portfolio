@@ -29,6 +29,11 @@ body {
 
 
 /* homepage */
+nav {
+  position: sticky;
+  top: 0;
+}
+
 .main-header-container {
   display: flex;
   align-items: center;
@@ -37,7 +42,7 @@ body {
   background-image: url("/assets/header.gif");
   background-repeat: no-repeat;
   width: 100%;
-  height: 700px;
+  height: 100vh;
   background-size: cover;
 }
 
@@ -54,6 +59,7 @@ body {
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    /* position: fixed; */
 }
 
 .intro-text {
@@ -69,6 +75,7 @@ body {
 #memoji {
   width: 100px;
 }
+
 
 h1 {
     color: var(--Main-Black, #181717);
@@ -160,46 +167,34 @@ h2 {
   margin: 100px;
 }
 
-
-
 .scroller {
-  height: 700px;
-  overflow-y: scroll;
   scroll-snap-type: y mandatory;
 
-  scroll-padding-top: 15vh;
-  overflow-y: scroll;
+  /* height: 700px; */
+  height: 100vh;
+  overflow-y: scroll;  
+  /* scroll-padding-top: 15vh; */
 }
 
 .scroller section {
   scroll-snap-align: start;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
+  height: 100vh;
 }
 
-
-
- .swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
+body {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  min-height: 10vh;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+footer {
+	scroll-snap-stop: always;
+	scroll-snap-align: end;
+  position: relative;
+  margin-top: auto;
 }
+
 
 /* resume page */
 .resume {
@@ -236,7 +231,7 @@ h2 {
     transform: translateY(4px);
   }
 
-  /* about page */
+/* about page */
   .about-me-container {
     display: flex;
     align-items: flex-start;
@@ -283,7 +278,6 @@ h2 {
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      height: 730px;
     }
 
     .typewriter h1 {
