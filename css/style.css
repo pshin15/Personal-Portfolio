@@ -234,7 +234,7 @@ body {
     margin-bottom: 25px
 }
 
-.resume-img {
+#resume-img {
   width: 50%;
 }
 
@@ -279,7 +279,7 @@ body {
     margin-bottom: 50px;
   }
 
-  .about-img {
+  #about-img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -377,5 +377,28 @@ body {
       width: 55%; 
       margin: 50px 0px 50px 50px;
     }
+
+    .resume {
+      display: flex;
+      /* align-items: center; */
+      /* justify-content: center; */
+      /* flex-direction: column; */
+      height: 100vh;
+      /* margin-bottom: 25px */
+    }
+      
+    #resume-img {
+      width: 85%;
+    }
+  
+    .about-me-section {
+      display: flex;
+      /* align-items: center; */
+      /* justify-content: center; */
+      flex-direction: column;
+      /* gap: 50px; */
+      margin-bottom: 50px;
+    }
+  
     
   }
