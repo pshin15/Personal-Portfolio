@@ -5,6 +5,11 @@ body {
     background-color: #F6F5EF;
 }
 
+a {
+  color: black;
+  font-weight: 500;
+}
+
 .navigation-container {
     display: flex;
     align-items: center;
@@ -41,12 +46,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   background-image: url("/assets/header.gif");
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
   background-size: cover;
+  background-position: center;
 }
 
 .header-text {
@@ -72,13 +78,11 @@ body {
     width: 442px;
     height: 272px;
     flex-shrink: 0;
-
 }
 
 #memoji, #memoji-wave {
   width: 100px;
 }
-
 
 h1 {
     color: var(--Main-Black, #181717);
@@ -92,16 +96,17 @@ h1 {
 
 .typewriter h1 {
   /* color: #fff; */
+  overflow: hidden;
   font-family: DM Sans;
   font-size: 35px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid black; /* The typwriter cursor */
+  border-right: .1em solid black; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .1em; /* Adjust as needed */
+  margin: 10 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .05em; 
   animation: 
     typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
+    blink-caret 1s step-end infinite;
 }
 
 /* The typing effect */
@@ -113,7 +118,7 @@ h1 {
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  20% { border-color: black }
+  10% { border-color: black }
 }
 
 
@@ -127,6 +132,7 @@ h2 {
     line-height: 117%; /* 37.44px */
     letter-spacing: -0.96px;
     text-align: left;
+    padding-bottom: 45px;
 }
 
 
@@ -149,7 +155,8 @@ h2 {
   background-image: url("/assets/bookmark-img.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh; /* Set the height to 100% of the viewport height */
+  background-position: left;
+  height: 100vh;
   /* width: 100%;  */
 }
 
@@ -160,7 +167,8 @@ h2 {
   background-image: url("/assets/search-img.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh; /* Set the height to 100% of the viewport height */
+  background-position: left;
+  height: 95vh;
   /* width: 100%;  */
 }
 
@@ -202,9 +210,17 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10px;
+  padding: 10px 12px;
+  text-decoration: none;
+}
 
-  /* height: 50px; */
+.footer a {
+  color: black;
+  font-size: 12px;
+  text-decoration: none;
+  font-style:normal;
+  padding: 5px 10px 5px 0px;
+  font-size: 15px;
 }
 
 
@@ -272,45 +288,94 @@ body {
     flex-shrink: 0;
   }
 
-  /* @keyframes name */
-  /* transform:  */
-  /* animation: name duration transition infinite */
   
   @media screen and (max-width: 600px) {
+
+    .main-header-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-image: url("/assets/header.gif");
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+    }
 
     .main-header {
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
-  }
+    }
   
     .header {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
+      /* flex-wrap: wrap; */
+    }
+
+    .header-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+    }  
+
+    .intro-text {
+      display: flex;
+      /* align-items: stretch; */
+      flex-direction: column;
+      width: 442px;
+      height: 272px;
+      flex-shrink: 0;
     }
 
     .typewriter h1 {
-      font-size: 35px;
+      font-size: 20px;
       font-family: DM Sans;
       overflow: hidden; /* Ensures the content is not revealed until the animation */
       border-right: .15em solid black; /* The typwriter cursor */
-      white-space: nowrap; /* Keeps the content on a single line */
-      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      white-space: wrap; /* Keeps the content on a single line */
+      margin: 10 auto; /* Gives that scrolling effect as the typing happens */
       letter-spacing: .1em; /* Adjust as needed */
+
       animation: 
         typing 3.5s steps(30, end),
         blink-caret .5s step-end infinite;
     }    
 
+    h2 {
+      font-size: 25px;
+      text-wrap: wrap;
+      padding: 20px 50px 45px 50px;
+    }
+
     h3 {
       color: #000000;
   
       font-family: DM Sans;
-      font-size: 50px;
+      font-size: 30px;
       font-weight: 400;
-      line-height: 117%; /* 37.44px */
+
+      text-align: left;
     }
+
+    h5 {
+      display: flex;
+      justify-content: center;
+      text-wrap: wrap;
+      padding-bottom: 50px;
+    }
+
+    .project-cover-content {
+      align-content: center;
+      width: 55%; 
+      margin: 50px 0px 50px 50px;
+    }
+    
   }
