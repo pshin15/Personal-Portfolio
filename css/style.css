@@ -279,7 +279,7 @@ body {
     margin-bottom: 50px;
   }
 
-  #about-img {
+  .about-img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -393,11 +393,22 @@ body {
   
     .about-me-section {
       display: flex;
-      /* align-items: center; */
-      /* justify-content: center; */
+      align-items: center;
+      justify-content: center;
       flex-direction: column;
-      /* gap: 50px; */
       margin-bottom: 50px;
+    }
+
+    .about-me-section h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* margin: 10px; */
+      line-height: 20px;
+    }
+
+    #about-page-imgs {
+      width: 100%;
     }
   
     
