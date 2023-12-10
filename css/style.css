@@ -247,12 +247,12 @@ body {
     text-decoration: none;
     outline: none;
     color: #fff;
-    background-color: #04AA6D;
+    background-color: #003b6e;
     border: none;
     border-radius: 15px;
   }
   
-  .button:hover {background-color: #238126}
+  .button:hover {background-color: #205481}
   
   .button:active {
     background-color: #3e8e41;
