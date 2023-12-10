@@ -279,11 +279,11 @@ body {
     margin-bottom: 50px;
   }
 
-  .about-img {
+  #about-img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 480px;
+    width: 250px;
     /* height: 639px; */
     flex-shrink: 0;
   }
@@ -396,18 +396,10 @@ body {
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      margin-bottom: 50px;
+      margin-bottom: 5px;
     }
 
-    .about-me-section h2 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      /* margin: 10px; */
-      line-height: 20px;
-    }
-
-    #about-page-imgs {
+    #about-img {
       width: 100%;
     }
   
