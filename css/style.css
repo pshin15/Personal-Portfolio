@@ -355,6 +355,7 @@ body {
       padding: 20px 50px 45px 50px;
     }
 
+
     h3 {
       color: #000000;
   
@@ -398,6 +399,20 @@ body {
       flex-direction: column;
       margin-bottom: 5px;
     }
+
+    .about-me-container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      margin-left: 50px;
+      margin-right: 50px;
+      flex-direction: column;
+    }
+
+    .about-me-container h2, p {
+      padding: 10px;
+    }
+    
 
     #about-img {
       width: 100%;
