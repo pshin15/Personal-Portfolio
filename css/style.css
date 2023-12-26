@@ -76,11 +76,11 @@ a {
 h1 {
     color: var(--Main-Black, #181717);
     font-family: DM Sans;
-    font-size: 60px;
+    font-size: 45px;
     font-style: normal;
     font-weight: 500;
-    line-height: 97.2%; /* 58.32px */
-    letter-spacing: -1.8px;
+    line-height: 100%;
+    letter-spacing: 1px;
 }
 
 .typewriter h1 {
@@ -188,13 +188,11 @@ h2 {
   /* overflow-y: scroll; */
 }
 
-
 body {
   display: flex;
   flex-direction: column;
   min-height: 10vh;
 }
-
 
 .footer {
 	/* scroll-snap-stop: always; */
@@ -253,6 +251,7 @@ body {
     transform: translateY(4px);
   }
 
+
 /* about page */
   .about-me-container {
     display: flex;
@@ -268,14 +267,14 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 10px;
+    padding: 5px;
   }
 
   #about-img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 250px;
+    width: 480px;
     /* height: 639px; */
     flex-shrink: 0;
   }
