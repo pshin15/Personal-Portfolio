@@ -201,12 +201,6 @@ h2 {
   /* scroll-padding-top: 15vh; */
 }
 
-.scroller section {
-  scroll-snap-align: start;
-  /* overflow-y: scroll; */
-  height: 100%;
-}
-
 body {
   display: flex;
   flex-direction: column;
