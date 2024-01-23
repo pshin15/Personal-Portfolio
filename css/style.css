@@ -1,9 +1,5 @@
 /* applies to all pages */
 
-body {
-    font-family: DM Sans;
-    background-color: #F6F5EF;
-}
 
 a {
   color: black;
@@ -213,6 +209,38 @@ body {
   font-style:normal;
   padding: 5px 10px 5px 0px;
   font-size: 15px;
+}
+
+/* project pages */
+
+#main-content {
+  margin: 200px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+}
+
+#project-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-header-image {
+  width: 100%;
+  height: auto;
+}
+
+#project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-details-content {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
 }
 
 
